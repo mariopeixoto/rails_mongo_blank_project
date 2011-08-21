@@ -1,0 +1,20 @@
+development:
+    host: localhost
+    port: 27017
+    user: 
+    password: 
+    database: startup_development
+
+test:
+    host: localhost
+    port: 27017
+    user:
+    password:
+    database: startup_test
+        
+production:
+    host: localhost
+    port: 27017
+    user: 
+    password: 
+    database: startup_development
