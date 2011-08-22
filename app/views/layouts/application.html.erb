@@ -7,10 +7,12 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-	
-<p class="notice"><%= flash[:notice] || flash[:alert] %></p>
 
-<%= yield %>
+<div class="container">	
+	<%= render :partial => "layouts/topnav" %>
+	<p class="notice"><%= flash[:notice] || flash[:alert] %></p>
+	<%= yield %>
+</div>
 
 </body>
 </html>

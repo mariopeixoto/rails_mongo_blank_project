@@ -1,0 +1,46 @@
+<div class="page-header">
+	<h1>Sign Up</h1>
+</div>
+
+<%= form_for(resource, :as => resource_name, :url => user_registration_path) do |f| %>
+	<fieldset>
+		<div class="clearfix">
+			<%= f.label :email %>
+			<div class="input">
+				<%= f.text_field :email, :class => "xlarge" %>
+			</div>
+		</div>
+		<div class="clearfix">
+			<%= f.label :password %>
+			<div class="input">
+				<%= f.password_field :password, :class => "xlarge" %>
+			</div>
+		</div>
+		<div class="clearfix">
+			<%= f.label :password_confirmation %>
+			<div class="input">
+				<%= f.password_field :password_confirmation, :class => "xlarge" %>
+			</div>
+		</div>
+		<div class="actions">
+			<button type="submit" class="btn large primary">Sign Up</button>
+		</div>
+	</fieldset>
+<% end %>
+
+<!-- <h2>Sign up</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <p><%= f.label :email %><br />
+  <%= f.email_field :email %></p>
+
+  <p><%= f.label :password %><br />
+  <%= f.password_field :password %></p>
+
+  <p><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></p>
+
+  <p><%= f.submit "Sign up" %></p>
+<% end %> -->

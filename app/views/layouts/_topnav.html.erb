@@ -1,0 +1,35 @@
+<div class="topbar">
+	<div class="container ">
+    <h3><%= link_to "Startup", root_path %></h3>
+    <ul>
+		<% if current_user %>
+    		<li><%= link_to "Home", home_path %></li>
+		<% end %>
+		<!-- Common NAV -->
+		
+    </ul>
+    <ul class="nav secondary-nav">
+		<% if current_user %>
+			<li class="menu">
+				<a href="#" class="menu"><%= current_user.email %></a>
+				<ul class="menu-dropdown">
+					<li>
+						<%= link_to "Preferences", preferences_path %>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<%= link_to "Sign Out", destroy_user_session_path %>
+					</li>
+				</ul>
+			</li>
+		<% else %>
+    		<li>
+	        	<%= link_to "Sign In", new_user_session_path %>
+	      	</li>
+			<li>
+	        	<%= link_to "Sign Up", new_user_registration_path %>
+	      	</li>
+		<% end %>
+    </ul>
+  </div>
+</div>

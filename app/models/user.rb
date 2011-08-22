@@ -3,6 +3,8 @@ class User
   
   many :authentications
   
+  key :roles, Set
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -15,6 +17,12 @@ class User
 
   def password_required?
     (authentications.empty? || !password.blank?) && super
+  end
+  
+  def role?(role)
+    puts role.to_s
+    puts self.roles.member?(role.to_s) 
+    self.roles.member?(role.to_s)
   end
 
 end

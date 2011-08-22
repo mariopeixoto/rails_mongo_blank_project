@@ -12,6 +12,7 @@ class OmniauthCallbacksController < ApplicationController
       redirect_to root_url
     else
       user = User.new
+      user.roles << "USER"
       user.apply_omniauth(omniauth)
       if user.save
         flash[:notice] = "Signed in successfully."
