@@ -1,25 +1,49 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<% title("Settings - Account") %>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-  <%= devise_error_messages! %>
+<% stylesheet "settings" %>
 
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
+<%= render :partial => 'layouts/settingsnav', :locals => {:selected_tab => 'account'} %>
 
-  <p><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></p>
-
-  <p><%= f.submit "Update" %></p>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
-
-<%= link_to "Back", :back %>
+<div class="content_section">
+	<%= devise_error_messages! %>
+	<%= form_for(@user, :url => registration_path(@user), :html => { :method => :put }) do |f| %>
+	
+		<fieldset>
+			<div class="clearfix">
+				<%= f.label :name %>
+				<div class="input">
+					<%= f.text_field :name, :class => "xlarge" %>
+				</div>
+			</div>
+			<div class="clearfix">
+				<%= f.label :username %>
+				<div class="input">
+					<%= f.text_field :username, :class => "xlarge" %>
+				</div>
+			</div>
+			<div class="clearfix">
+				<%= f.label :email %>
+				<div class="input">
+					<%= f.text_field :email, :class => "xlarge" %>
+				</div>
+			</div>
+			
+			<div class="clearfix">
+				<%= f.label :password %>
+				<div class="input">
+					<%= f.password_field :password, :class => "xlarge" %>
+				</div>
+			</div>
+			<div class="clearfix">
+				<%= f.label :password_confirmation %>
+				<div class="input">
+					<%= f.password_field :password_confirmation, :class => "xlarge" %>
+				</div>
+			</div>
+			
+			<div class="actions">
+				<button type="submit" class="btn large primary">Save</button>
+			</div>
+		</fieldset>
+	<% end %>
+</div>

@@ -1,5 +1,5 @@
 <div class="topbar">
-	<div class="container ">
+	<div class="container">
     <h3><%= link_to "Startup", root_path %></h3>
     <ul>
 		<% if current_user %>
@@ -11,10 +11,10 @@
     <ul class="nav secondary-nav">
 		<% if current_user %>
 			<li class="menu">
-				<a href="#" class="menu"><%= current_user.email %></a>
+				<a href="#" class="menu"><%= current_user.username %></a>
 				<ul class="menu-dropdown">
 					<li>
-						<%= link_to "Preferences", preferences_path %>
+						<%= link_to "Settings", edit_user_registration_path %>
 					</li>
 					<li class="divider"></li>
 					<li>

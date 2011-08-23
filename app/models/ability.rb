@@ -7,14 +7,17 @@ class Ability
     if user.role? :ADMIN
       can :manage, :all
       
-      can [:home, :preferences], [User]
+      can [:home], [User]
+      can [:create, :destroy], [Authentication]
     elsif user.role? :USER
       can :read, :all
       
-      can [:home, :preferences], [User]
+      can [:home], [User]
+      can [:create, :destroy], [Authentication]
     else
-      cannot :all
+      can [:create], [Authentication]
     end
+    
   end
   
 end

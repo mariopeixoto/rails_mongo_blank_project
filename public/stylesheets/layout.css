@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	background: transparent;
+	padding-top: 60px;
+}
+
+.page_content {
+	margin-bottom: 10px;
+	background: white;
+	border-radius: 5px;
+}
+
+.footer {
+	padding: 0 100px;
+	width: auto;
+}
+
+.btn {
+	cursor: pointer;
+}

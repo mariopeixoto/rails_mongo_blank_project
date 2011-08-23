@@ -1,0 +1,49 @@
+#settings_header {
+	background: whiteSmoke;
+	border-bottom: 0;
+	margin-bottom: 0;
+	border-radius: 5px;
+}
+
+#settings_header h3 {
+	padding: 15px 20px 0 20px;
+}
+
+ul.tabs {
+	border-color: #E5E5E5;
+	margin: 10px 0 0 0;
+	padding-left: 10px;
+	width: auto;
+}
+
+ul.tabs > li.active > a {
+	border-color: #E5E5E5;
+	color: #333;
+	font-weight: bold;
+}
+
+ul.tabs > li.active:hover > a {
+	background: white;
+	cursor: default;
+}
+
+ul.tabs > li:hover > a {
+	border-color: #E5E5E5;
+	background: #ededed;
+	text-decoration: none;
+}
+
+.content_section {
+	padding: 15px 20px;
+	width: auto;
+	overflow: hidden;
+}
+
+form label {
+	width: 150px;
+	margin-right: 10px;
+}
+
+.authentication img {
+	vertical-align: middle;
+}

@@ -1,0 +1,22 @@
+<% title("Settings - Account") %>
+
+<% stylesheet "settings" %>
+
+<%= render :partial => 'layouts/settingsnav', :locals => {:selected_tab => 'authentications'} %>
+
+<div class="content_section">
+	<% @authentications.each do |authentication| %>
+		<div class="authentication">
+			<%= image_tag "auth/#{authentication.provider}_64.png" %>
+			<%= link_to "Remove", authentication_path(authentication), :method => :delete %>
+		</div>
+	<% end %>
+	<% if @providers.size > 0 %>
+		<div>
+			<h3>Sign with:</h3>
+			<% @providers.each do |provider| %>
+				<%= link_to image_tag("auth/#{provider.to_s}_64.png",:alt => "#{provider.to_s.titleize}"), omniauth_authorize_path(resource_name, provider) %>
+			<% end %>
+		</div>
+	<% end %>
+</div>

@@ -76,7 +76,6 @@ GEM
     multi_xml (0.2.2)
     multipart-post (1.1.2)
     net-ldap (0.2.2)
-    nifty-generators (0.4.6)
     nokogiri (1.4.7)
     oa-basic (0.2.6)
       oa-core (= 0.2.6)
@@ -185,7 +184,6 @@ DEPENDENCIES
   mm-devise
   mongo_mapper
   mongrel (= 1.2.0.pre2)
-  nifty-generators
   oa-openid
   omniauth
   rails (= 3.0.9)

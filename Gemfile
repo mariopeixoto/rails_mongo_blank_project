@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'rake', '0.9.2'
 gem 'jquery-rails'
-gem 'nifty-generators'
 
 gem 'devise', '1.4.2'
 gem 'mm-devise'

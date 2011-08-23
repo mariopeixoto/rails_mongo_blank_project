@@ -4,7 +4,4 @@ class UsersController < ApplicationController
   def home
   end
   
-  def preferences
-  end
-  
 end
