@@ -3,7 +3,7 @@ Startup::Application.routes.draw do
   devise_for :users, :path => 'users', 
             :controllers => { :omniauth_callbacks => 'authentications', :sessions => 'sessions',
                               :passwords => 'passwords', :registrations => 'registrations' },
-            :skip => [:sessions, :passwords] do
+            :skip => [:sessions] do
     # registrations
     get 'sign_up' => 'registrations#new', :as => :new_user_registration
     

@@ -1,10 +1,18 @@
-<h2>Forgot your password?</h2>
+<div class="page-header">
+	<h1>Forgot your password?</h1>
+</div>
 
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
-
-  <p><%= f.submit "Send me reset password instructions" %></p>
+	<%= devise_error_messages! %>
+	<fieldset>
+		<div class="clearfix">
+			<%= f.label :email %>
+			<div class="input">
+				<%= f.text_field :email, :class => "xlarge" %>
+			</div>
+		</div>
+		<div class="actions">
+			<button type="submit" class="btn large primary">Reset my password</button>
+		</div>
+	</fieldset>
 <% end %>
