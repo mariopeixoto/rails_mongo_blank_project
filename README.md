@@ -1,4 +1,4 @@
-Fork, clone or just download this blank project and have a instant working Rails 3 project with the following:
+Clone or just download this blank project and have a instant working Rails 3 project with the following:
 
 - MongoDB (http://mongodb.org)
 - Mongo Mapper (http://mongomapper.com)
