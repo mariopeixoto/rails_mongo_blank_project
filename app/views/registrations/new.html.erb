@@ -5,6 +5,12 @@
 <%= form_for(resource, :as => resource_name, :url => user_registration_path) do |f| %>
 	<fieldset>
 		<div class="clearfix">
+			<%= f.label :username %>
+			<div class="input">
+				<%= f.text_field :username, :class => "xlarge" %>
+			</div>
+		</div>
+		<div class="clearfix">
 			<%= f.label :email %>
 			<div class="input">
 				<%= f.text_field :email, :class => "xlarge" %>
