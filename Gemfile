@@ -9,6 +9,7 @@ gem 'mm-devise'
 gem 'cancan'
 gem 'oa-openid', :require => 'omniauth/openid'
 gem 'omniauth'
+gem 'img_gravatar'
 
 #mongo drivers
 gem 'mongo_mapper'

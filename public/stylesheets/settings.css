@@ -50,3 +50,18 @@ form label {
 .authentications .actions {
 	padding-left: 70px;
 }
+
+#settings_header > h3 > img {
+	vertical-align: middle;
+}
+
+.avatar {
+		color: #404040;
+}
+
+.avatar img {
+	border: 1px solid #dfdfdf;
+	vertical-align: middle;
+	padding: 5px;
+	margin-left: 160px;
+}

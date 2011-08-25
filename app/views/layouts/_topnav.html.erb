@@ -11,7 +11,10 @@
     <ul class="nav secondary-nav">
 		<% if current_user %>
 			<li class="menu">
-				<a href="#" class="menu"><%= current_user.username %></a>
+				<a href="#" class="menu">
+					<%= img_gravatar(current_user.email, {:size => 20}).html_safe %>
+					<%= current_user.username %>
+				</a>
 				<ul class="menu-dropdown">
 					<li>
 						<%= link_to "Settings", edit_user_registration_path %>

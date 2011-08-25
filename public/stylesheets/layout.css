@@ -21,3 +21,7 @@ body {
 .btn {
 	cursor: pointer;
 }
+
+ul.secondary-nav > li.menu > a.menu > img{
+	vertical-align: middle;
+}
