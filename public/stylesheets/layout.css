@@ -11,8 +11,11 @@ body {
 }
 
 .footer {
-	padding: 0 100px;
-	width: auto;
+	background: whiteSmoke;
+	margin-top: 45px;
+	border-top: 1px solid #dfdfdf;
+	border-bottom:1px solid #dfdfdf;
+	padding: 10px 0;
 }
 
 .btn {
