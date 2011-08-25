@@ -1,5 +1,4 @@
 #settings_header {
-	background: whiteSmoke;
 	border-bottom: 0;
 	margin-bottom: 0;
 	border-radius: 5px;
@@ -46,4 +45,8 @@ form label {
 
 .authentication img {
 	vertical-align: middle;
+}
+
+.authentications .actions {
+	padding-left: 70px;
 }

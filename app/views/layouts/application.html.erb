@@ -5,9 +5,6 @@
 	<%= stylesheet_link_tag "bootstrap-1.0.0.min", "layout" %>
 	<%= javascript_include_tag :defaults %>
 	<%= csrf_meta_tag %>
-	<% if current_user %>
-		<%= stylesheet_link_tag "background" %>
-	<% end %>
 	<%= yield(:head) %>
 </head>
 <body>
