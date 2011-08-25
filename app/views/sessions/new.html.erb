@@ -7,9 +7,9 @@
 		<div class="row">
 			<div class="span8 columns">
 				<div class="clearfix">
-					<%= f.label :email %>
+					<%= f.label :login %>
 					<div class="input">
-						<%= f.text_field :email, :class => "xlarge" %>
+						<%= f.text_field :login, :class => "xlarge" %>
 					</div>
 				</div>
 				<div class="clearfix">
@@ -26,7 +26,7 @@
 				</div>
 				<div class="clearfix">
 					<div class="input">
-						<a href="#">Forgot password?</a>
+						<%= link_to "Forgot password?", new_user_password_path %>
 					</div>
 				</div>
 			</div>

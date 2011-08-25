@@ -1,5 +1,6 @@
 class Authentication
   include MongoMapper::Document
+  safe
   
   key :uid, String
   key :provider, String

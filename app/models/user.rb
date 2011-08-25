@@ -1,8 +1,10 @@
 class User
   include MongoMapper::Document
+  safe
   
   key :name, String
   key :username, String, :unique => true, :required => true
+  key :email, String
   
   many :authentications
   
@@ -13,6 +15,8 @@ class User
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
          
+  attr_accessor :login
+
   def apply_omniauth(omniauth)
     self.email = omniauth['user_info']['email'] if email.blank?
     self.name = omniauth['user_info']['name'] if name.blank?
@@ -27,5 +31,13 @@ class User
   def role?(role)
     self.roles.member?(role.to_s)
   end
+  
+  
+  protected
+  
+    def self.find_for_database_authentication(conditions)
+     self.where({ :username => conditions[:login] }).first ||
+         self.where({ :email => conditions[:login] }).first
+    end
 
 end

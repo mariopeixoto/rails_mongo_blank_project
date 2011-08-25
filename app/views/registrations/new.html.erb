@@ -3,6 +3,7 @@
 </div>
 
 <%= form_for(resource, :as => resource_name, :url => user_registration_path) do |f| %>
+	<%= devise_error_messages! %>
 	<fieldset>
 		<div class="clearfix">
 			<%= f.label :username %>
