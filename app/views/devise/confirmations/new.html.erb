@@ -1,0 +1,18 @@
+<div class="page-header">
+	<h1>Resend confirmation instructions:</h1>
+</div>
+
+<%= form_for(resource, :as => resource_name, :url => user_confirmation_path, :html => { :method => :post }) do |f| %>
+	<%= devise_error_messages! %>
+	<fieldset>
+		<div class="clearfix">
+			<%= f.label :email %>
+			<div class="input">
+				<%= f.text_field :email, :class => "xlarge" %>
+			</div>
+		</div>
+		<div class="actions">
+			<button type="submit" class="btn large primary">Resend instructions</button>
+		</div>
+	</fieldset>
+<% end %>
