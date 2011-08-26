@@ -21,6 +21,7 @@ class User
     self.email = omniauth['user_info']['email'] if email.blank?
     self.name = omniauth['user_info']['name'] if name.blank?
     self.username, domain = self.email.split "@" if username.blank?
+    self.confirmed_at, self.confirmation_sent_at = Time.now  
     authentications.build(:provider => omniauth['provider'], :uid => omniauth['uid'])
   end
 
