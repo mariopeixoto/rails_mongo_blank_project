@@ -17,4 +17,4 @@ production:
     port: 27017
     user: 
     password: 
-    database: startup_development
+    database: startup_production
