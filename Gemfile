@@ -1,10 +1,18 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
-gem 'rake', '0.9.2'
+gem 'rails'
+gem 'rake'
 gem 'jquery-rails'
 
-gem 'devise', '1.4.2'
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
+end
+
+gem 'devise'
 gem 'mm-devise'
 gem 'cancan'
 gem 'oa-openid', :require => 'omniauth/openid'
@@ -21,7 +29,6 @@ gem 'mongrel', '1.2.0.pre2', :group => :development
 group :test do
   gem "rspec"
   gem "rspec-rails"
-  gem "factory_girl"
   # Pretty printed test output
   gem 'turn', :require => false
 end
