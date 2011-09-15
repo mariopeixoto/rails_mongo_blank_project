@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> <%= yield(:title) %></title>
+	<title> OFrentista <%= " - #{yield(:title)}" if !yield(:title).blank? %></title>
 	<link rel="stylesheet" media="screen" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css">
 	<%= stylesheet_link_tag "application" %>
 	<%= javascript_include_tag "application" %>
@@ -18,7 +18,7 @@
 	</div>
 </div>
 <div class="footer">
-	<div class="container">© 2011 Startup Inc.</div>
+	<div class="container">Copyright © 2011. <%=t "footer" %>.</div>
 </div>
 
 </body>

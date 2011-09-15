@@ -1,5 +1,7 @@
+<% title t("sign.in") %>
+
 <div class="page-header">
-	<h1>Sign In</h1>
+	<h1><%=t "sign.in" %></h1>
 </div>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
@@ -26,12 +28,12 @@
 				</div>
 				<div class="clearfix">
 					<div class="input">
-						<%= link_to "Forgot password?", new_user_password_path %>
+						<%= link_to t("password.forgot"), new_user_password_path %>
 					</div>
 				</div>
 			</div>
 			<div class="span8 columns">
-				<h3>Sign with:</h3>
+				<h3><%=t "sign.in" %> <%=t "with"%>:</h3>
 				<% if devise_mapping.omniauthable? %>
 				  <% resource_class.omniauth_providers.each do |provider| %>
 				    <%= link_to image_tag("auth/#{provider.to_s}_64.png",:alt => "#{provider.to_s.titleize}"), omniauth_authorize_path(resource_name, provider) %>
@@ -40,7 +42,7 @@
 			</div>
 		</div>
 		<div class="actions">
-			<button type="submit" class="btn large primary">Sign In</button>
+			<button type="submit" class="btn large primary"><%=t "sign.in" %></button>
 		</div>
 	</fieldset>
 <% end %>

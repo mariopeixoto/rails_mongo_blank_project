@@ -1,5 +1,7 @@
+<% title t("password.forgot") %>
+
 <div class="page-header">
-	<h1>Forgot your password?</h1>
+	<h1><%=t "password.forgot" %></h1>
 </div>
 
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
@@ -12,7 +14,7 @@
 			</div>
 		</div>
 		<div class="actions">
-			<button type="submit" class="btn large primary">Reset my password</button>
+			<button type="submit" class="btn large primary"><%=t "password.reset" %></button>
 		</div>
 	</fieldset>
 <% end %>

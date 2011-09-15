@@ -1,0 +1,40 @@
+pt-BR:
+    hello: "Olá"
+    password:
+        forgot: "Esqueceu sua senha?"
+        reset: "Restaurar minha senha"
+        change: "Mudar minha senha"
+    settings: "Configurações"
+    avatar:
+        change: "Mude sua foto em"
+    save: "Salvar"
+    sign:
+        up: "Registrar"
+        in: "Entrar"
+        out: "Sair"
+    with: "com"
+    need:
+        login: "Você precisa estar logado para acessar esta página"
+    success:
+        auth:
+            add: "Autenticação bem sucedida"
+            remove: "Autenticação removida"
+        sign:
+            in: "Login efetuado com sucesso"
+    instructions:
+        resend: "Reenviar instruções"
+    account: "Conta"
+    authentications: "Autenticações"
+    remove: "Remover"
+    footer: "Entre em contato e conheça nossos termos de serviço"
+    mongo_mapper:
+        models:
+            user: "Usuário"
+        attributes:
+            user:
+                password: "Senha"
+                password_confirmation: "Confirmação da senha"
+                username: "Nome de usuário"
+                email: "Email"
+                login: "Nome de usuário/Email"
+                remember_me: "Lembrar de mim"

@@ -3,18 +3,18 @@ development:
     port: 27017
     user: 
     password: 
-    database: startup_development
+    database: ofrentista_development
 
 test:
     host: localhost
     port: 27017
     user:
     password:
-    database: startup_test
+    database: ofrentista_test
         
 production:
     host: localhost
     port: 27017
     user: 
     password: 
-    database: startup_production
+    database: ofrentista_production

@@ -1,4 +1,4 @@
-<% title("Settings - Authentications") %>
+<% title("settings") %>
 
 <% stylesheet "settings" %>
 
@@ -8,12 +8,12 @@
 	<% @authentications.each do |authentication| %>
 		<div class="authentication">
 			<%= image_tag "auth/#{authentication.provider}_64.png" %>
-			<%= link_to "Remove", authentication_path(authentication), :method => :delete %>
+			<%= link_to t("remove"), authentication_path(authentication), :method => :delete %>
 		</div>
 	<% end %>
 	<div class="actions">
 		<% if @providers.size > 0 %>
-			<h3>Sign with:</h3>
+			<h3><%=t "sign.in" %> <%=t "with"%>:</h3>
 			<% @providers.each do |provider| %>
 				<%= link_to image_tag("auth/#{provider.to_s}_64.png",:alt => "#{provider.to_s.titleize}"), omniauth_authorize_path(resource_name, provider) %>
 			<% end %>

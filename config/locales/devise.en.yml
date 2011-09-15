@@ -32,6 +32,7 @@ en:
       send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
       send_paranoid_instructions: 'If your e-mail exists on our database, you will receive an email with instructions about how to confirm your account in a few minutes.'
       confirmed: 'Your account was successfully confirmed. You are now signed in.'
+      link: 'You can confirm your account through the link below:'
     registrations:
       signed_up: 'Welcome! You have signed up successfully.'
       inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
@@ -51,3 +52,12 @@ en:
         subject: 'Reset password instructions'
       unlock_instructions:
         subject: 'Unlock Instructions'
+    account:
+        confirm: 'Confirm my account'
+    password:
+        requested: 'Someone has requested a link to change your password, and you can do this through the link below.'
+    dont:
+        requested: "If you didn't request this, please ignore this email"
+    wont:
+        change: "Your password won't change until you access the link above and create a new one"
+            

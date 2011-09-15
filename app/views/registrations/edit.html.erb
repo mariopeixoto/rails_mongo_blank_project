@@ -1,4 +1,4 @@
-<% title("Settings - Account") %>
+<% title("settings") %>
 
 <% stylesheet "settings" %>
 
@@ -42,11 +42,11 @@
 			</div>
 			<div class="clearfix avatar">
 				<a href="http://gravatar.com" target="_blank"><%= img_gravatar(current_user.email, {:size => 48}).html_safe %></a>
-				Change your avatar at <a href="http://gravatar.com" target="_blank">gravatar.com</a>.
+				<%=t "avatar.change" %> <a href="http://gravatar.com" target="_blank">gravatar.com</a>.
 			</div>
 			
 			<div class="actions">
-				<button type="submit" class="btn large primary">Save</button>
+				<button type="submit" class="btn large primary"><%= t "save" %></button>
 			</div>
 		</fieldset>
 	<% end %>

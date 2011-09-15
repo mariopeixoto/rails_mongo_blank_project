@@ -1,5 +1,7 @@
+
+
 <div class="page-header">
-	<h1>Resend confirmation instructions:</h1>
+	<h1><%=t "instructions.resend" %></h1>
 </div>
 
 <%= form_for(resource, :as => resource_name, :url => user_confirmation_path, :html => { :method => :post }) do |f| %>
@@ -12,7 +14,7 @@
 			</div>
 		</div>
 		<div class="actions">
-			<button type="submit" class="btn large primary">Resend instructions</button>
+			<button type="submit" class="btn large primary"><%=t "instructions.resend" %></button>
 		</div>
 	</fieldset>
 <% end %>

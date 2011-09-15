@@ -2,4 +2,32 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+    hello: "Hello"
+    password:
+        forgot: "Forgot your password?"
+        reset: "Reset my password"
+        change: "Change my password"
+    settings: "Settings"
+    avatar:
+        change: "Change your avatar at"
+    save: "Save"
+    sign:
+        up: "Sign Up"
+        in: "Sign In"
+        out: "Sign Out"
+    with: "with"
+    need:
+        login: "You have to log in to access this page"
+    success:
+        auth:
+            add: "Authentication successful"
+            remove: "Authentication removed"
+        sign:
+            in: "Signed in successfully"
+    instructions:
+        resend: "Resend instructions"
+    account: "Account"
+    authentications: "Authentications"
+    remove: "Remove"
+    footer: "Contact us to know our terms of service"
+            

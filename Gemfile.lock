@@ -79,6 +79,8 @@ GEM
       activemodel (~> 3.0)
       activesupport (~> 3.0)
       plucky (~> 0.3.8)
+    mongomapper_i18n (0.1.0)
+      mongo_mapper (>= 0.7.0)
     mongrel (1.2.0.pre2)
       daemons (~> 1.0.10)
       gem_plugin (~> 0.2.3)
@@ -212,6 +214,7 @@ DEPENDENCIES
   jquery-rails
   mm-devise
   mongo_mapper
+  mongomapper_i18n
   mongrel (= 1.2.0.pre2)
   oa-openid
   omniauth

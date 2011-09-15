@@ -1,11 +1,11 @@
 <div id="settings_header" class="page-header">
-	<h3><%= current_user.username %>'s settings</h3>
+	<h3><%= current_user.username %> - <%=t "settings" %></h3>
 	<ul class="tabs">
 		<li <% if selected_tab == 'account' %> class="active" <%end%> >
-			<%= link_to "Account", edit_user_registration_path %>
+			<%= link_to t("account"), edit_user_registration_path %>
 		</li>
 		<li <% if selected_tab == 'authentications' %> class="active" <%end%> >
-			<%= link_to "Authentications", authentications_path %>
+			<%= link_to t("authentications"), authentications_path %>
 		</li>
 	</ul>
 </div>
