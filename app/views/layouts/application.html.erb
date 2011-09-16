@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> OFrentista <%= " - #{yield(:title)}" if !yield(:title).blank? %></title>
+	<title> <%= t "project.title" %> <%= " - #{yield(:title)}" if !yield(:title).blank? %></title>
 	<link rel="stylesheet" media="screen" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css">
 	<%= stylesheet_link_tag "application" %>
 	<%= javascript_include_tag "application" %>

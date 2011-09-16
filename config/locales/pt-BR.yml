@@ -1,4 +1,6 @@
 pt-BR:
+    project:
+        title: "Startup"
     hello: "Olá"
     password:
         forgot: "Esqueceu sua senha?"
