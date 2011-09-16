@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails'
-gem 'rake'
+gem 'rails', '~> 3.1.0'
 gem 'jquery-rails'
 
 # Gems used only for assets and not required
@@ -24,7 +23,7 @@ gem 'mongo_mapper'
 gem 'bson_ext'
 gem 'mongomapper_i18n'
 
-gem 'mongrel', '1.2.0.pre2', :group => :development
+gem 'mongrel', '~> 1.2.0.pre2', :group => :development
 
 #rspec
 group :test do

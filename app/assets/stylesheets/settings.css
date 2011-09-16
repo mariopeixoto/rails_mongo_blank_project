@@ -1,7 +1,5 @@
 #settings_header {
 	border-bottom: 0;
-	margin-bottom: 0;
-	border-radius: 5px;
 }
 
 #settings_header h3 {
@@ -12,24 +10,6 @@ ul.tabs {
 	border-color: #E5E5E5;
 	margin: 10px 0 0 0;
 	padding-left: 10px;
-	width: auto;
-}
-
-ul.tabs > li.active > a {
-	border-color: #E5E5E5;
-	color: #333;
-	font-weight: bold;
-}
-
-ul.tabs > li.active:hover > a {
-	background: white;
-	cursor: default;
-}
-
-ul.tabs > li:hover > a {
-	border-color: #E5E5E5;
-	background: #ededed;
-	text-decoration: none;
 }
 
 .content_section {
@@ -51,17 +31,22 @@ form label {
 	padding-left: 70px;
 }
 
-#settings_header > h3 > img {
-	vertical-align: middle;
-}
-
-.avatar {
-		color: #404040;
-}
-
 .avatar img {
-	border: 1px solid #dfdfdf;
 	vertical-align: middle;
-	padding: 5px;
 	margin-left: 160px;
+	padding: 4px;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.avatar img:hover {
+  border-color: #0069d6;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
 }
