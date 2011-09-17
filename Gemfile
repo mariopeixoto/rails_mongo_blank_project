@@ -3,6 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '~> 3.1.0'
 gem 'jquery-rails'
 
+#mongo drivers
+gem 'mongo_mapper'
+gem 'bson_ext'
+gem 'mongomapper_i18n'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -18,11 +23,6 @@ gem 'oa-openid', :require => 'omniauth/openid'
 gem 'omniauth'
 gem 'img_gravatar'
 
-#mongo drivers
-gem 'mongo_mapper'
-gem 'bson_ext'
-gem 'mongomapper_i18n'
-
 gem 'mongrel', '~> 1.2.0.pre2', :group => :development
 
 #rspec
@@ -32,3 +32,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+### Add your gems here
