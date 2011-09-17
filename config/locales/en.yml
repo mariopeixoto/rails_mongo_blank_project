@@ -32,4 +32,7 @@ en:
     authentications: "Authentications"
     remove: "Remove"
     footer: "Contact us to know our terms of service"
+    will_paginate:
+        previous_label: "&larr; Previous"
+        next_label: "Next &rarr;"
             

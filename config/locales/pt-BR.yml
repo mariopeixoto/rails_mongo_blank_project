@@ -40,3 +40,6 @@ pt-BR:
                 email: "Email"
                 login: "Nome de usuário/Email"
                 remember_me: "Lembrar de mim"
+    will_paginate:
+        previous_label: "&larr; Anterior"
+        next_label: "Próxima &rarr;"
