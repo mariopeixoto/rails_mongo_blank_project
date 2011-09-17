@@ -20,17 +20,15 @@
 						<%= f.password_field :password, :class => "xlarge" %>
 					</div>
 				</div>
-				<div class="clearfix">
+				<div class="clearfix remember">
 					<%= f.label :remember_me %>
 					<div class="input">
-						<%= f.check_box :remember_me %> 
+						<ul class="inputs-list">
+							<li><%= f.check_box :remember_me %></li>
+						</ul>
 					</div>
 				</div>
-				<div class="clearfix">
-					<div class="input">
-						<%= link_to t("password.forgot"), new_user_password_path %>
-					</div>
-				</div>
+				<%= link_to t("password.forgot"), new_user_password_path, :class => 'forgot_password' %>
 			</div>
 			<div class="span8 columns">
 				<h3><%=t "sign.in" %> <%=t "with"%>:</h3>
