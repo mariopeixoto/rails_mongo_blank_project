@@ -22,6 +22,7 @@ gem 'cancan'
 gem 'oa-openid', :require => 'omniauth/openid'
 gem 'omniauth'
 gem 'img_gravatar'
+gem 'will_paginate'
 
 gem 'mongrel', '~> 1.2.0.pre2', :group => :development
 
